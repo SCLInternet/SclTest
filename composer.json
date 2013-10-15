@@ -1,0 +1,29 @@
+{
+    "name" : "sclinternet/scl-test",
+    "description" : "Extensions to PHP for use in SCL projects.",
+    "type" : "library",
+    "authors" : [
+        {
+            "name" : "Tom Oram",
+            "email" : "tom@x2k.co.uk",
+            "homepage" : "http://github.com/tomphp"
+        }
+    ],
+    "keywords" : [],
+    "homepage" : "https://github.com/SCLInternet/SclTest",
+    "license" : [
+        "MIT"
+    ],
+    "require" : {
+        "phpunit/phpunit": "3.7"
+    },
+    "require-dev" : {
+        "squizlabs/php_codesniffer" : "1.*",
+        "phpmd/phpmd" : "1.4.0"
+    },
+    "autoload" : {
+        "psr-0" : {
+            "SclTest" : "src/"
+        }
+    }
+}

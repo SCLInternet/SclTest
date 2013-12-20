@@ -32,10 +32,7 @@ abstract class AbstractTestCase extends \PHPUnit_Framework_TestCase
      */
     protected function assertServiceIsInstanceOf($type, $serviceName, $message = '')
     {
-        $this->assertInstanceOf(
-            $serviceName,
-            $this->getServiceManager()->get($serviceName)
-        );
+        $this->assertInstanceOf($type, $this->getServiceManager()->get($serviceName));
     }
 
     /**
